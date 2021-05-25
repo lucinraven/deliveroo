@@ -1,5 +1,5 @@
 <?php
-include '../src/pages/header.php'
+include '../private/pages/header.php'
 ?>
 
 <!-- browsing/search page -->
@@ -169,6 +169,6 @@ include '../src/pages/header.php'
 </div>
 
 <?php
-include '../src/pages/footer.php'
+include '../private/pages/footer.php'
 
 ?>

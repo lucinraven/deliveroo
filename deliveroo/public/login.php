@@ -1,9 +1,9 @@
 <?php
 //calling the header php
-include '../src/pages/header.php';
+include '../private/pages/header.php';
 
 //to call the form handlers: login
-require '../src/includes/forms/login-form.php';
+require '../private/includes/forms/login-form.php';
 ?>
 
 <!-- Login page -->
@@ -59,5 +59,5 @@ require '../src/includes/forms/login-form.php';
 
 
 <?php
-include '../src/pages/footer.php'
+include '../private/pages/footer.php'
 ?>

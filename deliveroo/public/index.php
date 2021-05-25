@@ -1,5 +1,5 @@
 <?php
-include '../src/pages/header.php'
+include '../private/pages/header.php'
 ?>
 
 <!-- Index header content -->
@@ -127,7 +127,7 @@ include '../src/pages/header.php'
 </div>
 
 <?php
-include '../src/pages/footer.php'
+include '../private/pages/footer.php'
 
 ?>
 

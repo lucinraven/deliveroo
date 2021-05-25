@@ -1,6 +1,6 @@
 <?php
 
-include '../src/pages/header.php'
+include '../private/pages/header.php'
 ?>
 
 <!-- Register restaurant page -->
@@ -90,5 +90,5 @@ include '../src/pages/header.php'
 </div>
 <!-- register restaurant page end of code -->
 <?php
-include '../src/pages/footer.php'
+include '../private/pages/footer.php'
 ?>
