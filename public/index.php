@@ -1,5 +1,5 @@
 <?php
-include '../private/pages/header.php'
+include '../private/pages/header.php';
 ?>
 
 <!-- Index header content -->

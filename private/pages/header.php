@@ -1,6 +1,5 @@
 <?php
 include("../private/config/config.php");
-
 include("../private/includes/classes/User.php");
 ?>
 
@@ -50,14 +49,17 @@ include("../private/includes/classes/User.php");
                 <div class="d-flex align-items-center">
                     <a href="all-restaurants.php" class="btn btn-primary">All restaurant</a>
                     <a href="register-restaurant.php" class="btn btn-primary">Partner with us</a>
-                    <a href="login.php" class="btn btn-primary">Login or Sign Up</a>
-                    <div class="dropdown">
-                        <button class="btn drop-btn">Username</button>
+                    <?php if(isset($_SESSION['email'])){
+                        echo '<div class="dropdown">
+                        <button class="btn drop-btn">'. $_SESSION["email"] .'</button>
                         <div class="dropdown-content">
                             <a href="user-account.php">My Account</a>
-                            <a href="../src/handlers/logout.php">Logout</a>
+                            <a href="../private/includes/handlers/logout.php">Logout</a>
                         </div>
-                    </div>
+                    </div>'; } else {
+                        echo '<a href="login.php" class="btn btn-primary">Login or Sign Up</a>';
+                    }
+                    ?>
                 </div>
             </div>
             <!-- Collapsible wrapper -->
@@ -83,5 +85,3 @@ include("../private/includes/classes/User.php");
             </div>
         </div>
     </div>
-
-    <!-- Navbar -->
