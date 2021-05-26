@@ -1,0 +1,100 @@
+.register-restaurant-page {
+    height: auto;
+    width: 100%;
+    padding: 50px 0 100px 0;
+    background: $primary;
+
+    .register-forms {
+        height: auto;   
+    }
+
+    .left-content{
+        @include center;
+        flex-direction: column;
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: $font-main;
+        }
+
+        form {
+            width: 100%;
+   
+            .row{
+                margin: 0 0 5px 0;
+                width: 100%;
+  
+                .col-md-6{
+                    padding: 0;
+                }
+            }
+
+           
+            label{
+                margin-bottom: 5px;
+                padding: 0;
+                font-size: 1rem;
+                font-weight: 600;
+                font-family: $font-main;
+            }
+
+            input{
+                margin: 0 auto;
+                height: 35px;
+                width: 100%;
+                border: solid;
+                border-width: 3px;
+                border-radius: 5px;
+                border-color: $secondary;
+                outline: none;
+            }
+
+            select{
+                padding: 0 5px;
+                margin: 0 auto;
+                height: 35px;
+                width: 100%;
+                border: solid;
+                border-width: 3px;
+                border-color: $secondary;
+                outline: none;
+            }
+
+            span{
+                text-align: center;
+            }
+
+            .btn{
+                margin-bottom: 15px;
+                background: $secondary;
+                font-size: 1rem;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+        }
+
+        .submit-btn {
+            float: right;
+            height: 40px;
+            width: 170px;
+            font-size: 1rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-family: $font-main;
+            background: $secondary;
+            color: $white-color;
+            border: none;
+        }
+    }
+    
+    .right-content{
+        @include center;
+
+        img{
+            height: 600px;
+            width: 600px;
+        }
+    }
+}

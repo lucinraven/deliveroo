@@ -1,0 +1,18 @@
+.modal {
+    .modal-body {
+        height: 500px;
+        width: 500px;
+    }
+
+    .modal-footer {
+        .btn{
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: capitalize;
+            font-family: $font-main;
+            color: $white-bg-color;
+            background: $secondary;
+        }
+    }
+}

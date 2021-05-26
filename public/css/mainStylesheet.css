@@ -1,0 +1,1294 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+.footer {
+  height: auto;
+}
+
+.footer .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .card-item {
+  width: 250px;
+  margin: 0 10px;
+  padding: 30px 0 60px 0;
+  background: #3d3d3d;
+  border-radius: 3px;
+}
+
+.footer .card-item h5 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.footer .card-item a {
+  font-size: 0.9rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.navbar {
+  background: none;
+}
+
+.navbar b {
+  font-weight: 900;
+  font-family: "Quicksand", sans-serif;
+  color: #ff9f1c;
+}
+
+.navbar .nav-link {
+  margin-left: 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Quicksand", sans-serif;
+  color: #3d3d3d;
+}
+
+.navbar .nav-link:hover {
+  color: #ffbf69;
+}
+
+.navbar .btn {
+  margin-right: 10px;
+  background: #ff9f1c;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar .btn:hover {
+  background: #ffbf69;
+}
+
+.navbar .drop-btn {
+  background-color: #ff9f1c;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+}
+
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: black;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .dropdown:hover .drop-btn {
+  background-color: #ff9f1c;
+}
+
+#map {
+  height: 450px;
+  width: 450px;
+  background-color: #02DFC0;
+}
+
+.modal .modal-body {
+  height: 500px;
+  width: 500px;
+}
+
+.modal .modal-footer .btn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-family: "Quicksand", sans-serif;
+  color: #FFFFFF;
+  background: #ff9f1c;
+}
+
+.all-restaurant-page {
+  background: #FFFFFF;
+  padding: 15px 15px 100px 15px;
+}
+
+.all-restaurant-page .container-md {
+  height: auto;
+  width: auto;
+  padding: 5px 0 5px 0;
+}
+
+.all-restaurant-page .container-md .items-showcase {
+  width: auto;
+  margin: 0 auto;
+}
+
+.all-restaurant-page .container-md .row {
+  margin: 10px;
+  border: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+  background-color: #FFFFFF;
+}
+
+.all-restaurant-page .container-md .row h1 {
+  margin: 0;
+  padding: 15px 15px 15px 25px;
+  font-size: 1.4rem;
+  font-size: "Quicksand", sans-serif;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.all-restaurant-page .container-md .row .view-item {
+  margin: 10px auto;
+  padding: 10px;
+  height: auto;
+  width: 190px;
+  display: inline-block;
+  background-color: #02DFC0;
+  border: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.all-restaurant-page .container-md .row .view-item img {
+  display: block;
+  height: 120px;
+  width: 100%;
+  background-color: #ff9f1c;
+}
+
+.all-restaurant-page .container-md .row .view-item h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-size: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.all-restaurant-page .container-md .row .view-item p {
+  font-size: 0.9rem;
+  font-size: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.browser-page-page {
+  height: auto;
+  overflow: hidden;
+  padding: 15px 0;
+  background: #FFFFFF;
+}
+
+.browser-page-page .container {
+  padding: 0;
+  -webkit-box-shadow: 2px 2px 15px 1px #d1d1d1;
+          box-shadow: 2px 2px 15px 1px #d1d1d1;
+}
+
+.browser-page-page .row {
+  height: auto;
+  margin: 0 auto;
+}
+
+.browser-page-page .col-md-2 {
+  padding: 10px 25px 25px 25px;
+  background: #FFFFFF;
+  border-right: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.browser-page-page .col-md-2 h1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.browser-page-page .col-md-2 ul {
+  margin: 0;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.browser-page-page .col-md-2 li {
+  margin-top: 5px;
+  list-style-type: none;
+}
+
+.browser-page-page .col-md-2 a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+}
+
+.browser-page-page .col-md-2 a:hover {
+  color: #02DFC0;
+}
+
+.browser-page-page .col-md-10 {
+  padding: 0;
+  background: #FFFFFF;
+}
+
+.browser-page-page .col-md-10 .item-showcase {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.browser-page-page .col-md-10 h1 {
+  margin: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.browser-page-page .col-md-10 .item-widget {
+  height: auto;
+  margin: 10px;
+  padding: 5px 10px;
+  width: 200px;
+  background-color: #02DFC0;
+}
+
+.browser-page-page .col-md-10 .item-widget img {
+  height: 150px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.browser-page-page .col-md-10 .item-widget .item-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.browser-page-page .col-md-10 .item-widget .price-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.browser-page-page .pagination-footer {
+  padding: 10px;
+}
+
+.browser-page-page .pagination-footer ul {
+  margin: 0;
+}
+
+.browser-page-page .pagination-footer a {
+  font-size: 1rem;
+}
+
+.index-page {
+  height: auto;
+  width: 100%;
+}
+
+.index-page .header-banner {
+  padding: 25px;
+  height: auto;
+  width: 100%;
+  background-color: #02DFC0;
+}
+
+.index-page .header-banner .banner-content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.index-page .header-banner .banner-content .col-md-6 {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-page .header-banner .banner-content .col-md-6 h1 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 2.3rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.index-page .header-banner .banner-content .col-md-6 img {
+  height: 500px;
+  width: 500px;
+}
+
+.index-page .header-banner .banner-content .banner-box {
+  padding: 40px 30px;
+  height: auto;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px -5px #838383;
+          box-shadow: 0 0 10px -5px #838383;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+
+.index-page .header-banner .banner-content .banner-box p {
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.index-page .header-banner .banner-content .banner-box .search-box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.index-page .header-banner .banner-content .banner-box .search-input {
+  padding-left: 10px;
+  height: 50px;
+  width: 100%;
+  border: solid;
+  border-width: thin;
+  border-color: #ff9f1c;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-page .header-banner .banner-content .banner-box .search-input input {
+  padding-left: 15px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.index-page .header-banner .banner-content .banner-box .search-input .locate-btn {
+  padding: 0 15px;
+  border: none;
+  background: none;
+  color: #ff9f1c;
+}
+
+.index-page .header-banner .banner-content .banner-box .search-find {
+  margin-left: 10px;
+}
+
+.index-page .header-banner .banner-content .banner-box .search-find .search-btn {
+  height: 50px;
+  width: 120px;
+  background: #ff9f1c;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  border-radius: 10px;
+}
+
+.index-page .header-banner .banner-content .banner-image {
+  position: absolute;
+  height: 540px;
+  width: 500px;
+}
+
+.index-page .body-content {
+  height: auto;
+  width: 100%;
+}
+
+.index-page .body-content .section-1 {
+  padding: 30px 0 50px 0;
+  height: auto;
+  width: 100%;
+}
+
+.index-page .body-content .section-1 h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #ff9f1c;
+  text-align: center;
+}
+
+.index-page .body-content .section-1 p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.index-page .body-content .section-1 .banner {
+  padding: 25px;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.index-page .body-content .section-1 .banner-item {
+  margin: 10px;
+  height: auto;
+  width: 230px;
+}
+
+.index-page .body-content .section-1 .banner-item img {
+  display: block;
+  margin: 10px auto;
+  height: 140px;
+  width: 500p;
+  background: #ffbf69;
+}
+
+.index-page .body-content .section-1 .banner-item p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.index-page .body-content .section-2 {
+  padding-bottom: 100px;
+  height: auto;
+  width: 100%;
+}
+
+.index-page .body-content .section-2 h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #ff9f1c;
+}
+
+.index-page .body-content .section-2 .col-md-6 {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-page .body-content .section-2 .col-md-6 img {
+  height: 280px;
+  width: 100%;
+  background: #ff9f1c;
+}
+
+.index-page .body-content .section-2 .col-md-6 h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #ff9f1c;
+}
+
+.index-page .body-content .section-2 .col-md-6 p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+}
+
+.index-page .body-content .section-2 .col-md-6 .btn {
+  height: 50px;
+  width: 150px;
+  background: #ffbf69;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.index-page .body-content .section-2 .register-banner {
+  height: 200px;
+  width: 100%;
+  background: #02DFC0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-page .body-content .section-2 .register-banner .btn {
+  margin-right: 50px;
+  height: 50px;
+  width: 150px;
+  background: #ffbf69;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.login-page {
+  height: 100%;
+  width: 100%;
+  background: #02DFC0;
+}
+
+.login-page .row {
+  height: auto;
+}
+
+.login-page .left-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .left-content img {
+  height: 600px;
+  width: 600px;
+}
+
+.login-page .right-content {
+  padding: 0 25px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-page .right-content h1 {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.login-page .right-content .login-form {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.login-page .right-content .login-form form {
+  margin: 0;
+  padding: 0 10px;
+  height: auto;
+  width: 100%;
+}
+
+.login-page .right-content .login-form .row {
+  margin: 0;
+  padding-bottom: 15px;
+  height: auto;
+}
+
+.login-page .right-content .login-form .row label {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.login-page .right-content .login-form .row input {
+  padding: 0 5px;
+  width: 100%;
+  height: 35px;
+  border: solid;
+  border-width: 2px;
+  border-color: #ff9f1c;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-page .right-content .login-form .btn {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #ffbf69;
+}
+
+.login-page .right-content span {
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.login-page .right-content .social-components {
+  padding: 0 10px;
+  height: auto;
+  width: 100%;
+}
+
+.login-page .right-content .social-components .btn {
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.login-page .right-content .social-components .facebook {
+  background: #4466d4;
+}
+
+.login-page .right-content .social-components .google {
+  color: #000000;
+  background: #ffffff;
+}
+
+.login-page .right-content a {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.login-page .right-content a:hover {
+  color: #ff9f1c;
+}
+
+.register-restaurant-page {
+  height: auto;
+  width: 100%;
+  padding: 50px 0 100px 0;
+  background: #02DFC0;
+}
+
+.register-restaurant-page .register-forms {
+  height: auto;
+}
+
+.register-restaurant-page .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-restaurant-page .left-content h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.register-restaurant-page .left-content form {
+  width: 100%;
+}
+
+.register-restaurant-page .left-content form .row {
+  margin: 0 0 5px 0;
+  width: 100%;
+}
+
+.register-restaurant-page .left-content form .row .col-md-6 {
+  padding: 0;
+}
+
+.register-restaurant-page .left-content form label {
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.register-restaurant-page .left-content form input {
+  margin: 0 auto;
+  height: 35px;
+  width: 100%;
+  border: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: #ff9f1c;
+  outline: none;
+}
+
+.register-restaurant-page .left-content form select {
+  padding: 0 5px;
+  margin: 0 auto;
+  height: 35px;
+  width: 100%;
+  border: solid;
+  border-width: 3px;
+  border-color: #ff9f1c;
+  outline: none;
+}
+
+.register-restaurant-page .left-content form span {
+  text-align: center;
+}
+
+.register-restaurant-page .left-content form .btn {
+  margin-bottom: 15px;
+  background: #ff9f1c;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.register-restaurant-page .left-content .submit-btn {
+  float: right;
+  height: 40px;
+  width: 170px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  background: #ff9f1c;
+  color: #FFFFFF;
+  border: none;
+}
+
+.register-restaurant-page .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-restaurant-page .right-content img {
+  height: 600px;
+  width: 600px;
+}
+
+.sign-up-page {
+  height: 100%;
+  width: 100%;
+  background: #02DFC0;
+}
+
+.sign-up-page .row {
+  height: auto;
+}
+
+.sign-up-page .left-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-up-page .left-content img {
+  height: 600px;
+  width: 600px;
+}
+
+.sign-up-page .right-content {
+  padding: 0 25px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sign-up-page .right-content h1 {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sign-up-page .right-content .login-form {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.sign-up-page .right-content .login-form form {
+  margin: 0;
+  padding: 0 10px;
+  height: auto;
+  width: 100%;
+}
+
+.sign-up-page .right-content .login-form .row {
+  margin: 0;
+  padding-bottom: 5px;
+  height: auto;
+}
+
+.sign-up-page .right-content .login-form .row label {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sign-up-page .right-content .login-form .row input {
+  padding: 0 5px;
+  width: 100%;
+  height: 35px;
+  border: solid;
+  border-width: 2px;
+  border-color: #ff9f1c;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sign-up-page .right-content .login-form .btn {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #ffbf69;
+}
+
+.sign-up-page .right-content span {
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sign-up-page .right-content a {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.sign-up-page .right-content a:hover {
+  color: #ff9f1c;
+}
+
+.user-account-page {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+}
+
+.user-account-page .container-md {
+  padding: 0;
+  -webkit-box-shadow: 2px 2px 15px 1px #d1d1d1;
+          box-shadow: 2px 2px 15px 1px #d1d1d1;
+}
+
+.user-account-page .row {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.user-account-page .row .col-md-3 {
+  padding: 0;
+  height: auto;
+  border-top: solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.user-account-page .row .col-md-3 h1 {
+  margin: 20px 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.user-account-page .row .col-md-3 li {
+  margin: 9px;
+  list-style: none;
+}
+
+.user-account-page .row .col-md-3 .tab-btn {
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.user-account-page .row .col-md-3 button:hover {
+  color: #5f5f5f;
+}
+
+.user-account-page .row .col-md-9 {
+  height: auto;
+  padding: 0;
+  border: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.user-account-page .row .col-md-9 .accInfo {
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.user-account-page .row .col-md-9 .accInfo .header-title {
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.user-account-page .row .col-md-9 .accInfo .header-title h1 {
+  margin: 0;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.user-account-page .row .col-md-9 .accInfo .row {
+  padding: 15px 15px 0 15px;
+  height: auto;
+}
+
+.user-account-page .row .col-md-9 .accInfo label {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.user-account-page .row .col-md-9 .accInfo input {
+  height: 25px;
+  width: 350px;
+  border: solid;
+  border-width: thin;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+}
+
+.user-account-page .row .col-md-9 .accFavorites {
+  height: auto;
+  width: 100%;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .header-title {
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .header-title h1 {
+  margin: 0;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.user-account-page .row .col-md-9 .accFavorites a {
+  display: block;
+  padding: 15px 15px 0 15px;
+  text-decoration: none;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .favorite-item {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  border: solid;
+  border-width: thin;
+  border-color: #d1d1d1;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .favorite-item .left-content img {
+  height: 100%;
+  width: 100%;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .favorite-item .right-content h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .favorite-item .right-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .favorite-item .right-content li {
+  margin-right: 5px;
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+}
+
+.user-account-page .row .col-md-9 .accFavorites .favorite-item .right-content p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #000000;
+}
+
+.view-restaurant-page {
+  padding: 15px 0 15px 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.view-restaurant-page .container-restaurant {
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+}
+
+.view-restaurant-page .container-restaurant .left-content {
+  padding-bottom: 15px;
+  height: auto;
+}
+
+.view-restaurant-page .container-restaurant .left-content h2 {
+  margin: 15px 0;
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.view-restaurant-page .container-restaurant .left-content .restaurant-details {
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.view-restaurant-page .container-restaurant .left-content .restaurant-details ul {
+  padding: 0;
+  list-style: none;
+}
+
+.view-restaurant-page .container-restaurant .left-content .restaurant-details li {
+  display: inline;
+}
+
+.view-restaurant-page .container-restaurant .left-content .restaurant-details p {
+  margin-right: 10px;
+  display: inline;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.view-restaurant-page .container-restaurant .left-content .map-banner {
+  height: 230px;
+  width: 100%;
+  background: #ff9f1c;
+}
+
+.view-restaurant-page .container-restaurant .right-content {
+  padding-bottom: 15px;
+  height: auto;
+}
+
+.view-restaurant-page .container-restaurant .right-content .restaurant-image {
+  padding: 15px 0;
+}
+
+.view-restaurant-page .container-restaurant .right-content .restaurant-image img {
+  height: 195px;
+  width: 100%;
+}
+
+.view-restaurant-page .container-restaurant .right-content .restaurant-description p {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.view-restaurant-page .container-restaurant .right-content .order {
+  height: auto;
+  width: 100%;
+}
+
+.view-restaurant-page .container-restaurant .right-content .order .btn-order {
+  margin-bottom: 9px;
+  height: 40px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+  background: #ff9f1c;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=mainStylesheet.css.map */

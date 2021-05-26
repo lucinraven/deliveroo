@@ -1,0 +1,236 @@
+.index-page {
+    height: auto;
+    width: 100%;
+
+    .header-banner {
+        padding: 25px;
+        height: auto;
+        width: 100%;
+        background-color: $primary;
+
+        .banner-content {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+
+            .col-md-6 {
+                padding: 0;
+                @include center;
+                flex-direction: column;
+
+                h1 {
+                    margin: 0;
+                    padding-bottom: 20px;
+                    font-size: 2.3rem;
+                    font-family: $font-main;
+                    font-weight: bold;
+                    color: $white-color;
+                }
+
+                img{
+                    height: 500px;
+                    width: 500px;
+                }
+
+            }
+            .banner-box {
+                padding: 40px 30px;
+                height: auto;
+                width: 100%;
+                box-shadow: 0 0 10px -5px #838383;
+                border-radius: 5px;
+                background: $white-bg-color;
+                
+
+                p{
+                    font-weight: 600;
+                    font-family: $font-main;
+                }
+
+                .search-box-container{
+                    @include center;
+                    justify-content: space-around;
+                }
+                .search-input{
+                    padding-left: 10px;
+                    height: 50px;
+                    width: 100%;
+                    border: solid;
+                    border-width: thin;
+                    border-color: $secondary;
+                    border-radius: 10px;
+                    @include center;
+
+                    input{
+                        padding-left: 15px;
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        font-weight: 600;
+                        font-family: $font-main;
+                    }
+
+                    .locate-btn{
+                        padding: 0 15px;
+                        border: none;
+                        background: none;
+                        color: $secondary;
+                    }
+                }
+                .search-find{
+                    margin-left: 10px;
+
+                    .search-btn{
+                        height: 50px;
+                        width: 120px;
+                        background: $secondary;
+                        color: $white-color;
+                        font-weight: 600;
+                        font-family: $font-main;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .banner-image {
+                position: absolute;
+                height: 540px;
+                width: 500px;
+            }
+        }
+    }
+
+    .body-content {
+        height: auto;
+        width: 100%;
+
+        .section-1 {
+            padding: 30px 0 50px 0;
+            height: auto;
+            width: 100%;
+
+            h1 {
+                margin: 0;
+                font-size: 2.3rem;
+                font-family: $font-main;
+                font-weight: bold;
+                color: $heading-color;
+                text-align: center;
+            }
+            p {
+                font-size: 1.3rem;
+                font-weight: 600;
+                font-family: $font-main;
+                text-align: center;
+            }
+
+            .banner {
+                padding: 25px;
+                height: auto;
+                width: 90%;
+                margin: 0 auto;
+                background: $white-bg-color;
+                @include center;
+                justify-content: space-evenly;
+            }
+
+            .banner-item {
+                margin: 10px;
+                height: auto;
+                width: 230px;
+
+                img {
+                    display: block;
+                    margin: 10px auto;
+                    height: 140px;
+                    width: 500p;
+                    background: $secondaryVariant;
+                }
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    font-family: $font-main;
+                    text-align: center;
+                }
+            }
+        }
+
+        .section-2 {
+            padding-bottom: 100px;
+            height: auto;
+            width: 100%;
+
+            h1 {
+                margin: 0;
+                font-size: 2.3rem;
+                font-family: $font-main;
+                font-weight: bold;
+                color: $heading-color;
+            }
+
+            .col-md-6 {
+                padding: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+
+                img {
+                    height: 280px;
+                    width: 100%;
+                    background: $secondary;
+                }
+
+                h1 {
+                    margin: 0;
+                    font-size: 2rem;
+                    font-family: $font-main;
+                    font-weight: bold;
+                    color: $heading-color;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    font-family: $font-main;
+                    color: $black-color;
+                }
+
+                .btn {
+                    height: 50px;
+                    width: 150px;
+                    background: $secondaryVariant;
+                    font-size: 1rem;
+                    font-family: $font-main;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    color: $white-color;
+                }
+            }
+
+            .register-banner {
+                height: 200px;
+                width: 100%;
+                background: $primary;
+                border-radius: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .btn {
+                    margin-right: 50px;
+                    height: 50px;
+                    width: 150px;
+                    background: $secondaryVariant;
+                    font-size: 1rem;
+                    font-family: $font-main;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

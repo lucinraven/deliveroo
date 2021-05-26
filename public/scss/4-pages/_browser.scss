@@ -1,0 +1,110 @@
+// Page Layout
+.browser-page-page {
+    height: auto;
+    overflow: hidden;
+    padding: 15px 0;
+    background: $white-bg-color;
+
+    .container {
+        padding: 0;
+        box-shadow: 2px 2px 15px 1px #d1d1d1;
+    }
+
+    .row {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    // Side Navigation
+    .col-md-2 {
+        padding: 10px 25px 25px 25px;
+        background: $white-bg-color;
+        border-right: solid;
+        border-width: thin;
+        border-color: #d1d1d1;
+
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: $font-main;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 15px;
+            text-decoration: none;
+        }
+
+        li {
+            margin-top: 5px;
+            list-style-type: none;
+        }
+        a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            font-family: $font-main;
+            color: #000000;
+        }
+        a:hover {
+            color: $primary;
+        }
+    }
+
+    .col-md-10 {
+        padding: 0;
+        background: $white-bg-color;
+
+        .item-showcase {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            margin: 15px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            font-family: $font-main;
+        }
+
+        .item-widget {
+            height: auto;
+            margin: 10px;
+            padding: 5px 10px;
+            width: 200px;
+            background-color: $primary;
+
+            img {
+                height: 150px;
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .item-heading {
+                font-size: 1.1rem;
+                font-weight: 600;
+                font-family: $font-main;
+            }
+            .price-heading {
+                font-size: 1rem;
+                font-weight: 600;
+                font-family: $font-main;
+            }
+        }
+    }
+
+    .pagination-footer {
+        padding: 10px;
+
+        ul {
+            margin: 0;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+}

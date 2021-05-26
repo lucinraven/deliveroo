@@ -1,0 +1,174 @@
+.user-account-page {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+
+    .container-md {
+        padding: 0;
+        box-shadow: 2px 2px 15px 1px #d1d1d1;
+    }
+
+    .row {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+
+        .col-md-3 {
+            padding: 0;
+            height: auto;
+            border-top: solid;
+            border-bottom: solid;
+            border-left: solid;
+            border-width: thin;
+            border-color: #d1d1d1;
+
+            h1 {
+                margin: 20px 15px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                font-family: $font-main;
+            }
+            li {
+                margin: 9px;
+                list-style: none;
+            }
+
+            .tab-btn {
+                margin: 0;
+                background: none;
+                border: none;
+                outline: none;
+                text-decoration: none;
+                color: #000000;
+                box-shadow: none;
+                font-weight: 600;
+                font-family: $font-main;
+            }
+            button:hover {
+                color: #5f5f5f;
+            }
+        }
+
+        .col-md-9 {
+            height: auto;
+            padding: 0;
+            border: solid;
+            border-width: thin;
+            border-color: #d1d1d1;
+
+            .accInfo {
+                padding: 0;
+                height: auto;
+                width: 100%;
+
+                .header-title {
+                    border-bottom: solid;
+                    border-width: thin;
+                    border-color: #d1d1d1;
+
+                    h1 {
+                        margin: 0;
+                        padding: 15px;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        font-family: $font-main;
+                    }
+                }
+
+                .row {
+                    padding: 15px 15px 0 15px;
+                    height: auto;
+                }
+
+                label {
+                    padding: 0;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    font-family: $font-main;
+                }
+
+                input {
+                    height: 25px;
+                    width: 350px;
+                    border: solid;
+                    border-width: thin;
+                    font-family: $font-main;
+                    color: #000000;
+                }
+            }
+
+            .accFavorites {
+                height: auto;
+                width: 100%;
+
+                .header-title {
+                    border-bottom: solid;
+                    border-width: thin;
+                    border-color: #d1d1d1;
+
+                    h1 {
+                        margin: 0;
+                        padding: 15px;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        font-family: $font-main;
+                    }
+                }
+
+                a {
+                    display: block;
+                    padding: 15px 15px 0 15px;
+                    text-decoration: none;
+                }
+
+                .favorite-item {
+                    height: auto;
+                    width: 100%;
+                    padding: 10px;
+                    border: solid;
+                    border-width: thin;
+                    border-color: #d1d1d1;
+
+                    .left-content {
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    .right-content {
+                        h5 {
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            font-family: $font-main;
+                            color: $black-color;
+                        }
+
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                        }
+
+                        li {
+                            margin-right: 5px;
+                            display: inline;
+                            font-size: 1rem;
+                            font-weight: 500;
+                            font-family: $font-main;
+                            color: $black-color;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-size: 1rem;
+                            font-weight: 600;
+                            font-family: $font-main;
+                            color: $black-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
