@@ -39,7 +39,7 @@ if (isset($_POST['reg-res-btn'])) {
     $res_building = ucfirst(strtolower($res_building)); // converting first smaller case letter to capital
 
     // Restaurant city latitude and longitude
-    $res_lat = trim($_POST['res-long']);
+    $res_lat = trim($_POST['res-lat']);
     $res_long = trim($_POST['res-long']);
 
     // Restaurant Cuisine

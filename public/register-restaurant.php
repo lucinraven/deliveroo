@@ -90,8 +90,8 @@ require '../private/includes/forms/restaurant-form.php';
                         </div>
 
                         <div class="row">
-                            <input type="hidden" name="res-lat" id="latitude">
-                            <input type="hidden" name="res-long" id="longitude">
+                            <input type="text" name="res-lat" id="latitude">
+                            <input type="text" name="res-long" id="longitude">
                         </div>
 
                         <input class="btn submit-btn" type="submit" name="reg-res-btn" value="Submit">

@@ -1,5 +1,13 @@
 <?php
-include '../private/pages/header.php'
+include '../private/pages/header.php';
+
+$res_id = $_GET['ID'];
+$sql = "SELECT * FROM restaurant WHERE res_id = ?";
+$stmt = $con->prepare($sql);
+$stmt->bind_param("i",$res_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$row = $result->fetch_assoc();
 ?>
 
 <!-- Restaurant Page -->
@@ -8,28 +16,28 @@ include '../private/pages/header.php'
         <div class="container-restaurant row">
             <!-- Left content column -->
             <div class="left-content col-md-8">
-                <h2>Heading Testing</h2>
+                <h2><?php echo $row['res_name'] ?></h2>
 
                 <div class="restaurant-details">
                     <ul>
                         <li>
-                            <p>Restaurant</p>
+                            <p><?php echo $row['res_type'] ?></p>
                         </li>
                         <li>
-                            <p>Chinese</p>
+                            <p><?php echo $row['res_cuisine'] ?></p>
                         </li>
                         <li>
-                            <p>Address</p>
+                            <p><?php echo $row['res_email'] ?></p>
                         </li>
                         <li>
-                            <p>055-53234232</p>
+                            <p><?php echo $row['res_num'] ?></p>
                         </li>
                         <li>
                             <p>06-53234232</p>
                         </li>
                     </ul>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore veniam distinctio dignissimos quae doloribus minus cupiditate nihil! Tempore minus necessitatibus odio explicabo numquam quos perferendis.</p>
+                    <p><?php echo $row['dscrpt'] ?></p>
                 </div>
 
                 <!-- Map banner -->
@@ -55,5 +63,8 @@ include '../private/pages/header.php'
 </div>
 
 <?php
+
+
+
 include '../private/pages/footer.php'
 ?>
