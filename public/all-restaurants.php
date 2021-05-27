@@ -12,7 +12,7 @@ include '../private/pages/header.php';
                 <h1>All restaurant</h1>
                 <!-- Card restaurant items-->
                 <?php
-                $sql = "SELECT res_id, res_name, res_cuisine FROM restaurant";
+                $sql = "SELECT res_id, res_name, res_cuisine, res_logo FROM restaurant";
                 $stmt = $con->prepare($sql);
                 $stmt->execute();
                 $result = $stmt->get_result();
@@ -20,7 +20,7 @@ include '../private/pages/header.php';
                 {
                 ?>
                     <a class="view-item" href="./view-restaurant.php?ID=<?php echo $row['res_id'];?>">
-                        <img src="" alt="" />
+                        <img src="./images/restaurant-logo/<?php echo $row['res_logo']?>" alt="" />
 
                         <h2><?php echo $row['res_name'] ?></h2>
                         <p><?php echo $row['res_cuisine'] ?></p>

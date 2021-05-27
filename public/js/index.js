@@ -1,20 +1,20 @@
 // Loading google map api and locating users location
 function indexMap() {
     let map, infoWindow;
-    var geocoder;
-  
+
     map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 25.3416817, lng: 55.391809 },
+      center: { lat: 5333.4234232, lng: 21.2342312 },
       zoom: 15,
     });
   
     infoWindow = new google.maps.InfoWindow();
+
     const locationButton = document.getElementById("locate-btn");
-  
     locationButton.addEventListener("click", () => {
       // Try HTML5 geolocation.
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
+          
           (position) => {
             const pos = {
               lat: position.coords.latitude,

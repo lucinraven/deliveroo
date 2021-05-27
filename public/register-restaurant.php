@@ -14,7 +14,7 @@ require '../private/includes/forms/restaurant-form.php';
                 <h1>Register your restaurant and become our partner</h1>
 
                 <div class="form-container">
-                    <form action="register-restaurant.php" method="POST">
+                    <form action="register-restaurant.php" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <label for="">
                                 Restaurant Name
@@ -70,9 +70,21 @@ require '../private/includes/forms/restaurant-form.php';
 
                         <div class="row">
                             <label for="">
+                                Upload Restaurant Logo
+                            </label>
+                            <input type="file" name="Image" id="fileUpload" accept="image/*">
+                            <?php
+                                if (in_array("Invalid file format.", $error_array)) echo "Invalid file format.";
+                                else if (in_array("Unknown error.", $error_array)) echo "Unknown error.";
+                                else if (in_array("File size too large.", $error_array)) echo "File size too large.";
+                            ?>
+                        </div>
+
+                        <div class="row">
+                            <label for="">
                                 Restaurant description
                             </label>
-                            <input type="text" name="res-description">
+                            <textarea type="text" name="res-description"></textarea>
                         </div>
 
                         <div class="row">
@@ -90,8 +102,8 @@ require '../private/includes/forms/restaurant-form.php';
                         </div>
 
                         <div class="row">
-                            <input type="text" name="res-lat" id="latitude">
-                            <input type="text" name="res-long" id="longitude">
+                            <input type="hidden" name="res-lat" id="latitude">
+                            <input type="hidden" name="res-long" id="longitude">
                         </div>
 
                         <input class="btn submit-btn" type="submit" name="reg-res-btn" value="Submit">

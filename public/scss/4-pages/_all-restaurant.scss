@@ -30,7 +30,7 @@
             }
 
             .view-item {
-                margin: 10px auto;
+                margin: 10px;
                 padding: 10px;
                 height: auto;
                 width: 190px;
@@ -52,14 +52,14 @@
                     font-size: 20px;
                     font-size: $font-main;
                     font-weight: 500;
-                    color: $black-color;
+                    color: $white-color;
                 }
 
                 p {
                     font-size: 0.9rem;
                     font-size: $font-main;
                     font-weight: 500;
-                    color: #000000;
+                    color: $white-color;
                 }
             }
 

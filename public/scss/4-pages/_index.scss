@@ -52,38 +52,18 @@
                     justify-content: space-around;
                 }
                 .search-input{
-                    padding-left: 10px;
                     height: 50px;
                     width: 100%;
                     border: solid;
                     border-width: thin;
                     border-color: $secondary;
                     border-radius: 10px;
+                    background: $secondary;
                     @include center;
 
-                    input{
-                        padding-left: 15px;
-                        height: 100%;
-                        width: 100%;
-                        border: none;
-                        outline: none;
-                        font-weight: 600;
-                        font-family: $font-main;
-                    }
-
                     .locate-btn{
-                        padding: 0 15px;
-                        border: none;
-                        background: none;
-                        color: $secondary;
-                    }
-                }
-                .search-find{
-                    margin-left: 10px;
-
-                    .search-btn{
                         height: 50px;
-                        width: 120px;
+                        width: 100% ;
                         background: $secondary;
                         color: $white-color;
                         font-weight: 600;
@@ -91,6 +71,9 @@
                         border: none;
                         border-radius: 10px;
                     }
+                }
+                .search-input{
+                    cursor: pointer;
                 }
             }
 
@@ -146,7 +129,6 @@
                     margin: 10px auto;
                     height: 140px;
                     width: 500p;
-                    background: $secondaryVariant;
                 }
                 p {
                     font-size: 1.2rem;

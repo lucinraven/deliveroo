@@ -35,7 +35,7 @@ if(isset($_POST['register-btn'])){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
         // Check if email already exist in database
-        $check_email = $con->prepare("SELECT email FROM users WHERE email=?");
+        $check_email = $con->prepare("SELECT user_email FROM users WHERE user_email=?");
 
         $check_email->bind_param("s", $email);
         $check_email->execute();
