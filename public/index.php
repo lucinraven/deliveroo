@@ -185,10 +185,6 @@ include '../private/pages/header.php';
                     });
 
                 });
-
-
-
-
             } else {
                 // Browser doesn't support Geolocation
                 handleLocationError(false, infoWindow, map.getCenter());
@@ -211,8 +207,6 @@ include '../private/pages/header.php';
         location.href = "../public/browser.php";
     };
 </script>
-
-
 
 <!-- google map script api -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=indexMap"></script>

@@ -4,7 +4,7 @@ include '../private/pages/header.php';
 $res_id = $_GET['ID'];
 $sql = "SELECT * FROM restaurant WHERE res_id = ?";
 $stmt = $con->prepare($sql);
-$stmt->bind_param("i",$res_id);
+$stmt->bind_param("i", $res_id);
 $stmt->execute();
 $result = $stmt->get_result();
 $row = $result->fetch_assoc();
@@ -41,7 +41,7 @@ $row = $result->fetch_assoc();
                 </div>
 
                 <!-- Map banner -->
-                <div class="map-banner"></div>
+                <div class="map-banner" id="map" style="width: 100%; height: 100%;"></div>
             </div>
 
             <!-- Right content column -->
@@ -62,9 +62,36 @@ $row = $result->fetch_assoc();
     </div>
 </div>
 
+<!-- google map script api -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=viewResMap"></script>
+
+
+<script type="text/javascript">
+    function viewResMap() {
+
+        <?php echo "var res_lat =" + $row['res_lat']?>
+        <?php echo "var res_lng =" + $row['res_long']?>
+
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+                lat: res_lat,
+                lng: res_lng
+            },
+            zoom: 15,
+        });
+
+        marker = new google.maps.Marker({
+            position: {
+                lat: res_lat,
+                lng: res_lng
+            },
+            map: map,
+            draggable: true,
+            title: "Your position",
+        });
+    }
+</script>
+
 <?php
-
-
-
 include '../private/pages/footer.php'
 ?>
