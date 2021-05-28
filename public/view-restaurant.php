@@ -62,35 +62,37 @@ $row = $result->fetch_assoc();
     </div>
 </div>
 
-<!-- google map script api -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=viewResMap"></script>
 
 
 <script type="text/javascript">
     function viewResMap() {
 
-        <?php echo "var res_lat =" + $row['res_lat']?>
-        <?php echo "var res_lng =" + $row['res_long']?>
-
+        <?php echo "var res_lat =" . $row['res_lat'] . ";"?>
+        <?php echo "var res_lng =" . $row['res_long'] . ";"?>
+        <?php echo "var res_name ='" . $row['res_name'] . "';"?>
+        console.log("res_lat",res_lat);
+        console.log("res_lng",res_lng);
         map = new google.maps.Map(document.getElementById("map"), {
             center: {
-                lat: res_lat,
-                lng: res_lng
+                lat: res_lng,
+                lng: res_lat
             },
             zoom: 15,
         });
 
         marker = new google.maps.Marker({
             position: {
-                lat: res_lat,
-                lng: res_lng
+                lat: res_lng,
+                lng: res_lat
             },
             map: map,
             draggable: true,
-            title: "Your position",
+            title: res_name,
         });
     }
 </script>
+<!-- google map script api -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=viewResMap"></script>
 
 <?php
 include '../private/pages/footer.php'
