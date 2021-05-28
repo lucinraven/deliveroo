@@ -15,13 +15,10 @@
                             <a href="#!" class="text-white">Investor</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">About 2</a>
+                            <a href="#!" class="text-white">Careers</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 4</a>
+                            <a href="#!" class="text-white">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -75,10 +72,10 @@
 
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#!" class="text-white">Link 1</a>
+                            <a href="#!" class="text-white">Apple</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">Link 2</a>
+                            <a href="#!" class="text-white">Android</a>
                         </li>
                     </ul>
                 </div>

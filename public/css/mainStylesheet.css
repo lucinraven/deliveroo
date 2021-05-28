@@ -595,19 +595,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .index-page .body-content .section-2 .register-banner {
-  height: 200px;
+  height: 250px;
   width: 100%;
+  margin: 100px 0;
   background: #272c48;
   border-radius: 10px;
+  background: url("../images/Food-banner-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index-page .body-content .section-2 .register-banner .register-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.index-page .body-content .section-2 .register-banner p {
+  margin-left: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #FFFFFF;
 }
 
 .index-page .body-content .section-2 .register-banner .btn {
@@ -672,6 +690,7 @@ h1, h2, h3, h4, h5, h6 {
 .login-page .right-content h1 {
   font-size: 2rem;
   font-family: "Quicksand", sans-serif;
+  color: #FFFFFF;
 }
 
 .login-page .right-content .login-form {
@@ -699,6 +718,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
+  color: #FFFFFF;
 }
 
 .login-page .right-content .login-form .row input {
@@ -729,6 +749,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
+  color: #FFFFFF;
 }
 
 .login-page .right-content .social-components {
@@ -935,6 +956,7 @@ h1, h2, h3, h4, h5, h6 {
 .sign-up-page .right-content h1 {
   font-size: 2rem;
   font-family: "Quicksand", sans-serif;
+  color: #FFFFFF;
 }
 
 .sign-up-page .right-content .login-form {
@@ -1242,11 +1264,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .view-restaurant-page .container-restaurant .right-content .restaurant-image {
+  height: 150px;
+  width: 150px;
   padding: 15px 0;
+  margin: 0 auto;
 }
 
 .view-restaurant-page .container-restaurant .right-content .restaurant-image img {
-  height: 195px;
+  height: 100%;
   width: 100%;
 }
 

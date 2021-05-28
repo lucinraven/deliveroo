@@ -32,9 +32,6 @@ $row = $result->fetch_assoc();
                         <li>
                             <p><?php echo $row['res_num'] ?></p>
                         </li>
-                        <li>
-                            <p>06-53234232</p>
-                        </li>
                     </ul>
 
                     <p><?php echo $row['dscrpt'] ?></p>
@@ -47,7 +44,7 @@ $row = $result->fetch_assoc();
             <!-- Right content column -->
             <div class="right-content col-md-4">
                 <div class="restaurant-image">
-                    <img src="" alt="">
+                    <img src="./images/restaurant-logo/<?php echo $row['res_logo']?>" alt="" />
                 </div>
                 <div class="restaurant-description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptates nobis eos illum laudantium? Pariatur, beatae. Suscipit, porro quibusdam praesentium.</p>
@@ -62,8 +59,6 @@ $row = $result->fetch_assoc();
     </div>
 </div>
 
-
-
 <script type="text/javascript">
     function viewResMap() {
 
@@ -74,19 +69,19 @@ $row = $result->fetch_assoc();
         console.log("res_lng",res_lng);
         map = new google.maps.Map(document.getElementById("map"), {
             center: {
-                lat: res_lng,
-                lng: res_lat
+                lat: res_lat,
+                lng: res_lng
+                
             },
             zoom: 15,
         });
 
         marker = new google.maps.Marker({
             position: {
-                lat: res_lng,
-                lng: res_lat
+                lat: res_lat,
+                lng: res_lng
             },
             map: map,
-            draggable: true,
             title: res_name,
         });
     }

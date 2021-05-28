@@ -192,14 +192,34 @@
                 }
             }
 
+           
+
             .register-banner {
-                height: 200px;
+                height: 250px;
                 width: 100%;
+                margin: 100px 0;
                 background: $primary;
                 border-radius: 10px;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                background: url('../images/Food-banner-2.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                .register-overlay{
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.5);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                p{
+                    margin-left: 50px;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    font-family: $font-main;
+                    color: $white-color;
+                }
 
                 .btn {
                     margin-right: 50px;
@@ -211,6 +231,7 @@
                     font-weight: bold;
                     text-transform: capitalize;
                     color: $white-color;
+
                 }
             }
         }

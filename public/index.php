@@ -87,7 +87,7 @@ include '../private/pages/header.php';
 
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="" alt="">
+                        <img src="images/bbq.jpg" alt="">
                     </div>
 
                     <div class="col-md-6">
@@ -107,13 +107,19 @@ include '../private/pages/header.php';
                     </div>
 
                     <div class="col-md-6">
-                        <img src="" alt="">
+                        <img src="images/healthy-food.jpg" alt="">
                     </div>
                 </div>
 
+
                 <div class="register-banner">
-                    <button class="btn">Sign Up</button>
+                    <div class="register-overlay">
+                        <p>Join with us today and get your delivery</p>
+                        <a href="signup.php"><button class="btn">Sign Up</button></a>
+                    </div>
+
                 </div>
+
             </section>
             <!-- Section 2 end -->
         </div>
