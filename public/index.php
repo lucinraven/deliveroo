@@ -134,8 +134,8 @@ include '../private/pages/header.php';
 
         map = new google.maps.Map(document.getElementById("map"), {
             center: {
-                lat: 25.3416817,
-                lng: 55.391809
+                lat: 25.351029856357197,
+                lng: 55.38951194049977                 
             },
             zoom: 15,
         });
@@ -215,9 +215,7 @@ include '../private/pages/header.php';
 </script>
 
 <!-- google map script api -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=indexMap"></script>
-
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=[YOUR API KEY]&callback=viewResMap"></script>
 
 <?php
 include '../private/pages/footer.php'

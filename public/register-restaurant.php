@@ -125,8 +125,7 @@ require '../private/includes/forms/restaurant-form.php';
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <!-- google map script api -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=regMap"></script>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=[YOUR API KEY]&callback=viewResMap"></script>
 
 <?php
 include '../private/pages/footer.php'

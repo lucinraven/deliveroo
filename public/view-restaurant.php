@@ -87,7 +87,7 @@ $row = $result->fetch_assoc();
     }
 </script>
 <!-- google map script api -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNqs400Ci1TiPc1Xgi_ZpqRnvNXP9chzU&callback=viewResMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=[YOUR API KEY]&callback=viewResMap"></script>
 
 <?php
 include '../private/pages/footer.php'
